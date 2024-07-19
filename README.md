@@ -11,30 +11,27 @@ PALM (Process-Aware Link Prediction Model) is an innovative framework that bridg
 - Attack graph generation incorporating domain knowledge
 - Novel exploit prediction using Graph Convolutional Networks (GCN)
 
-## Project Structure
-palm/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── src/
-│   ├── preprocessing/
-│   ├── process_mining/
-│   ├── attack_graph/
-│   └── graph_convolution_network/
-│
-├── model/
-│
-│
-├── tests/
-│
-├── evaluation/
-Copy
+
 ## Flow Chart
 
-[Insert your flow chart diagram here]
+```mermaid
+graph TD;
+    A[palm/] --> B[data/];
+    B --> B1[raw/];
+    B --> B2[processed/];
 
+    A --> C[src/];
+    C --> C1[preprocessing/];
+    C --> C2[process_mining/];
+    C --> C3[attack_graph/];
+    C --> C4[graph_convolution_network/];
+
+    A --> D[model/];
+
+    A --> E[tests/];
+
+    A --> F[evaluation/];
+```
 ## Installation
 
 1. Clone the repository:

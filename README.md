@@ -30,7 +30,7 @@ graph TD;
 
     A --> E[tests/];
 
-    A --> F[evaluation/];
+    E[tests/] --> F[evaluation/];
 ```
 ## Installation
 
